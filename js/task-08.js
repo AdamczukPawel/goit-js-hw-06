@@ -12,5 +12,4 @@ form.addEventListener("submit", (event) => {
     } else {
         window.alert("All fields must be filled");
     }
-    console.log(event);
 })
