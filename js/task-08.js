@@ -7,7 +7,11 @@ form.addEventListener("submit", (event) => {
     } = event.currentTarget;
     
     if (email.value !== "" && password.value !== "") {
-        console.log(`${email.name}: ${email.value}, ${password.name}: ${password.value}`);
+        const formValues = {
+            email: email.value,
+            password: password.value
+        }
+        console.log(formValues);
         form.reset();
     } else {
         window.alert("All fields must be filled");
